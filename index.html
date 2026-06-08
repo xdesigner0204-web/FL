@@ -174,4 +174,9 @@
 body {
   -webkit-user-select: none; /* 禁用文字/图片选中 */
   user-select: none;
+}img {
+  /* 禁用 iOS 和 Android 的长按弹出菜单/保存图片 */
+  -webkit-touch-callout: none; 
+  pointer-events: none; /* 让图片无法被点击和长按触发事件 */
 }
+
